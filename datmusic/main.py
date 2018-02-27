@@ -45,8 +45,8 @@ def inlinequery(bot, update):
                     )
                 )
             update.inline_query.answer(results=results, cache_time=INLINE_QUERY_CACHE_TIME)
-    try: except Exception as e:
-    error(bot, update, e)
+    except Exception as e:
+        error(bot, update, e)
 
 def search(query):
     if len(query.strip()) < 1:

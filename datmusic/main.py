@@ -72,7 +72,7 @@ def add_update_handlers(dp):
     return dp
 
 def main():
-    token = os.getenv("DATMUSIC_BOT_TOKEN")
+    token = os.getenv("TokenBot")
     if not token:
         logging.critical('NO TOKEN FOUND!')
         sys.exit()

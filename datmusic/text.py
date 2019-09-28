@@ -16,7 +16,7 @@ Example : {bot_uname} <code>Music name</code>
 
 /about - to see about page
 
-Subscribe to news: [Keralasbots](https://t.me/Keralasbots)
+Subscribe to news: <a href="https://t.me/Keralasbots">Keralasbots</a>
 """
 
 ABOUT_TEXT = """<b>{bot_pname} version {version}</b>

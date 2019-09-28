@@ -16,10 +16,10 @@ Example : {bot_name} <code>Music name</code>
 
 /about - to see about page
 
-Subscribe to news: https://t.me/Keralasbots
+Subscribe to news: [Keralasbots](https://t.me/Keralasbots)
 """
 
-ABOUT_TEXT = """<b>{bot_uname} version {version}</b>
+ABOUT_TEXT = """<b>{bot_name} version {version}</b>
 Created by @Keralabotsnews 
 New Social Network <a href="https://asterios.ws/#music">Asterios Network</a>."""
 
@@ -41,7 +41,7 @@ artists = ["2 Cellos", "Agnes Obel", "Aloe Black", "Andrew Belle", "Angus Stone"
            "deadmau5", "pg.lost", "Ólafur Arnalds"]
 
 def start(bot, update):
-    update.message.reply_text(START_TEXT.format(bot_name=bot.name, bot_uname=bot.name), parse_mode=ParseMode.HTML)
+    update.message.reply_text(START_TEXT.format(bot_name=bot.name, bot_name=bot.name), parse_mode=ParseMode.HTML)
 
 def about(bot, update):
     update.message.reply_text(ABOUT_TEXT.format(bot_name=bot.name, version=__version__),
